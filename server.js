@@ -10,6 +10,6 @@ app.use('*',authMiddleware);
 
 app.post('/create-form', createForm);
 
-app.listen(3001 , ()=>{
+app.listen(process.env.PORT , ()=>{
     console.log('listning at port 3001')
 });
